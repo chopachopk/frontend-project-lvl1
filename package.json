@@ -10,10 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/chopachopk/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Anastasia Cho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chopachopk/frontend-project-lvl1/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/chopachopk/frontend-project-lvl1#readme"
 }
