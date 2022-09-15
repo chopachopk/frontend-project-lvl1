@@ -1,17 +1,21 @@
 import readlineSync from 'readline-sync';
 
 import runEvenGame from '../games/even.js';
+import runCalcGame from '../games/calc.js';
 
 export const GAME = {
   EVEN: 'even',
+  CALC: 'calc',
 };
 
 const RULES = {
   [GAME.EVEN]: 'Answer "yes" if the number is even, otherwise answer "no".',
+  [GAME.CALC]: 'What is the result of the expression?',
 };
 
 const RUNNER = {
   [GAME.EVEN]: runEvenGame,
+  [GAME.CALC]: runCalcGame,
 };
 
 const STEPS_AMOUNT = 3;
