@@ -2,20 +2,24 @@ import readlineSync from 'readline-sync';
 
 import runEvenGame from '../games/even.js';
 import runCalcGame from '../games/calc.js';
+import runGcdGame from '../games/gcd.js';
 
 export const GAME = {
   EVEN: 'even',
   CALC: 'calc',
+  GCD: 'gcd',
 };
 
 const RULES = {
   [GAME.EVEN]: 'Answer "yes" if the number is even, otherwise answer "no".',
   [GAME.CALC]: 'What is the result of the expression?',
+  [GAME.GCD]: 'Find the greatest common divisor of given numbers.',
 };
 
 const RUNNER = {
   [GAME.EVEN]: runEvenGame,
   [GAME.CALC]: runCalcGame,
+  [GAME.GCD]: runGcdGame,
 };
 
 const STEPS_AMOUNT = 3;
