@@ -1,7 +1,7 @@
+import { getRandomNumberInLimit } from '../src/get-random-number-in-limit.js';
+
 const MAX_NUMBER = 10;
 const OPERATIONS = ['+', '-', '*'];
-
-const getRandomNumberInLimit = (limit) => Math.floor(Math.random() * limit);
 
 export default () => {
   const firstNumber = getRandomNumberInLimit(MAX_NUMBER);
