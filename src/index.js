@@ -3,23 +3,27 @@ import readlineSync from 'readline-sync';
 import runEvenGame from '../games/even.js';
 import runCalcGame from '../games/calc.js';
 import runGcdGame from '../games/gcd.js';
+import runProgressionGame from '../games/progression.js';
 
 export const GAME = {
   EVEN: 'even',
   CALC: 'calc',
   GCD: 'gcd',
+  PROGRESSION: 'progression',
 };
 
 const RULES = {
   [GAME.EVEN]: 'Answer "yes" if the number is even, otherwise answer "no".',
   [GAME.CALC]: 'What is the result of the expression?',
   [GAME.GCD]: 'Find the greatest common divisor of given numbers.',
+  [GAME.PROGRESSION]: 'What number is missing in the progression?',
 };
 
 const RUNNER = {
   [GAME.EVEN]: runEvenGame,
   [GAME.CALC]: runCalcGame,
   [GAME.GCD]: runGcdGame,
+  [GAME.PROGRESSION]: runProgressionGame,
 };
 
 const STEPS_AMOUNT = 3;
