@@ -4,12 +4,14 @@ import runEvenGame from '../games/even.js';
 import runCalcGame from '../games/calc.js';
 import runGcdGame from '../games/gcd.js';
 import runProgressionGame from '../games/progression.js';
+import runPrimeGame from '../games/prime.js';
 
 export const GAME = {
   EVEN: 'even',
   CALC: 'calc',
   GCD: 'gcd',
   PROGRESSION: 'progression',
+  PRIME: 'prime',
 };
 
 const RULES = {
@@ -17,6 +19,7 @@ const RULES = {
   [GAME.CALC]: 'What is the result of the expression?',
   [GAME.GCD]: 'Find the greatest common divisor of given numbers.',
   [GAME.PROGRESSION]: 'What number is missing in the progression?',
+  [GAME.PRIME]: 'Answer "yes" if given number is prime. Otherwise answer "no".',
 };
 
 const RUNNER = {
@@ -24,6 +27,7 @@ const RUNNER = {
   [GAME.CALC]: runCalcGame,
   [GAME.GCD]: runGcdGame,
   [GAME.PROGRESSION]: runProgressionGame,
+  [GAME.PRIME]: runPrimeGame,
 };
 
 const STEPS_AMOUNT = 3;
